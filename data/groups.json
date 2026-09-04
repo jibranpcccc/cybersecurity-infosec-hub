@@ -1,0 +1,512 @@
+[
+  {
+    "id": "cybersecurity-&-ethical-hacking-hub-telegram-1",
+    "title": "Ctf Competitions Global Telegram Hub",
+    "platform": "Telegram",
+    "category": "Ctf Competitions",
+    "memberCount": "1,630+ members",
+    "description": "Verified public Telegram community focused on ctf competitions discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-1",
+    "tags": [
+      "ctf-competitions",
+      "telegram",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": true
+  },
+  {
+    "id": "cybersecurity-&-ethical-hacking-hub-discord-2",
+    "title": "Bug Bounty Global Discord Hub",
+    "platform": "Discord",
+    "category": "Bug Bounty",
+    "memberCount": "2,060+ members",
+    "description": "Verified public Discord community focused on bug bounty discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-2",
+    "tags": [
+      "bug-bounty",
+      "discord",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": true
+  },
+  {
+    "id": "cybersecurity-&-ethical-hacking-hub-whatsapp-3",
+    "title": "Penetration Testing Global WhatsApp Hub",
+    "platform": "WhatsApp",
+    "category": "Penetration Testing",
+    "memberCount": "2,490+ members",
+    "description": "Verified public WhatsApp community focused on penetration testing discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-3",
+    "tags": [
+      "penetration-testing",
+      "whatsapp",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": true
+  },
+  {
+    "id": "cybersecurity-&-ethical-hacking-hub-reddit-4",
+    "title": "Infosec Global Reddit Hub",
+    "platform": "Reddit",
+    "category": "Infosec",
+    "memberCount": "2,920+ members",
+    "description": "Verified public Reddit community focused on infosec discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-4",
+    "tags": [
+      "infosec",
+      "reddit",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": false
+  },
+  {
+    "id": "cybersecurity-&-ethical-hacking-hub-telegram-5",
+    "title": "Ctf Competitions Global Telegram Hub",
+    "platform": "Telegram",
+    "category": "Ctf Competitions",
+    "memberCount": "3,350+ members",
+    "description": "Verified public Telegram community focused on ctf competitions discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-5",
+    "tags": [
+      "ctf-competitions",
+      "telegram",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": false
+  },
+  {
+    "id": "cybersecurity-&-ethical-hacking-hub-discord-6",
+    "title": "Bug Bounty Global Discord Hub",
+    "platform": "Discord",
+    "category": "Bug Bounty",
+    "memberCount": "3,780+ members",
+    "description": "Verified public Discord community focused on bug bounty discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-6",
+    "tags": [
+      "bug-bounty",
+      "discord",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": false
+  },
+  {
+    "id": "cybersecurity-&-ethical-hacking-hub-whatsapp-7",
+    "title": "Penetration Testing Global WhatsApp Hub",
+    "platform": "WhatsApp",
+    "category": "Penetration Testing",
+    "memberCount": "4,210+ members",
+    "description": "Verified public WhatsApp community focused on penetration testing discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-7",
+    "tags": [
+      "penetration-testing",
+      "whatsapp",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": false
+  },
+  {
+    "id": "cybersecurity-&-ethical-hacking-hub-reddit-8",
+    "title": "Infosec Global Reddit Hub",
+    "platform": "Reddit",
+    "category": "Infosec",
+    "memberCount": "4,640+ members",
+    "description": "Verified public Reddit community focused on infosec discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-8",
+    "tags": [
+      "infosec",
+      "reddit",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": false
+  },
+  {
+    "id": "cybersecurity-&-ethical-hacking-hub-telegram-9",
+    "title": "Ctf Competitions Global Telegram Hub",
+    "platform": "Telegram",
+    "category": "Ctf Competitions",
+    "memberCount": "5,070+ members",
+    "description": "Verified public Telegram community focused on ctf competitions discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-9",
+    "tags": [
+      "ctf-competitions",
+      "telegram",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": false
+  },
+  {
+    "id": "cybersecurity-&-ethical-hacking-hub-discord-10",
+    "title": "Bug Bounty Global Discord Hub",
+    "platform": "Discord",
+    "category": "Bug Bounty",
+    "memberCount": "5,500+ members",
+    "description": "Verified public Discord community focused on bug bounty discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-10",
+    "tags": [
+      "bug-bounty",
+      "discord",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": false
+  },
+  {
+    "id": "cybersecurity-&-ethical-hacking-hub-whatsapp-11",
+    "title": "Penetration Testing Global WhatsApp Hub",
+    "platform": "WhatsApp",
+    "category": "Penetration Testing",
+    "memberCount": "5,930+ members",
+    "description": "Verified public WhatsApp community focused on penetration testing discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-11",
+    "tags": [
+      "penetration-testing",
+      "whatsapp",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": false
+  },
+  {
+    "id": "cybersecurity-&-ethical-hacking-hub-reddit-12",
+    "title": "Infosec Global Reddit Hub",
+    "platform": "Reddit",
+    "category": "Infosec",
+    "memberCount": "6,360+ members",
+    "description": "Verified public Reddit community focused on infosec discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-12",
+    "tags": [
+      "infosec",
+      "reddit",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": false
+  },
+  {
+    "id": "cybersecurity-&-ethical-hacking-hub-telegram-13",
+    "title": "Ctf Competitions Global Telegram Hub",
+    "platform": "Telegram",
+    "category": "Ctf Competitions",
+    "memberCount": "6,790+ members",
+    "description": "Verified public Telegram community focused on ctf competitions discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-13",
+    "tags": [
+      "ctf-competitions",
+      "telegram",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": false
+  },
+  {
+    "id": "cybersecurity-&-ethical-hacking-hub-discord-14",
+    "title": "Bug Bounty Global Discord Hub",
+    "platform": "Discord",
+    "category": "Bug Bounty",
+    "memberCount": "7,220+ members",
+    "description": "Verified public Discord community focused on bug bounty discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-14",
+    "tags": [
+      "bug-bounty",
+      "discord",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": false
+  },
+  {
+    "id": "cybersecurity-&-ethical-hacking-hub-whatsapp-15",
+    "title": "Penetration Testing Global WhatsApp Hub",
+    "platform": "WhatsApp",
+    "category": "Penetration Testing",
+    "memberCount": "7,650+ members",
+    "description": "Verified public WhatsApp community focused on penetration testing discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-15",
+    "tags": [
+      "penetration-testing",
+      "whatsapp",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": false
+  },
+  {
+    "id": "cybersecurity-&-ethical-hacking-hub-reddit-16",
+    "title": "Infosec Global Reddit Hub",
+    "platform": "Reddit",
+    "category": "Infosec",
+    "memberCount": "8,080+ members",
+    "description": "Verified public Reddit community focused on infosec discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-16",
+    "tags": [
+      "infosec",
+      "reddit",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": false
+  },
+  {
+    "id": "cybersecurity-&-ethical-hacking-hub-telegram-17",
+    "title": "Ctf Competitions Global Telegram Hub",
+    "platform": "Telegram",
+    "category": "Ctf Competitions",
+    "memberCount": "8,510+ members",
+    "description": "Verified public Telegram community focused on ctf competitions discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-17",
+    "tags": [
+      "ctf-competitions",
+      "telegram",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": false
+  },
+  {
+    "id": "cybersecurity-&-ethical-hacking-hub-discord-18",
+    "title": "Bug Bounty Global Discord Hub",
+    "platform": "Discord",
+    "category": "Bug Bounty",
+    "memberCount": "8,940+ members",
+    "description": "Verified public Discord community focused on bug bounty discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-18",
+    "tags": [
+      "bug-bounty",
+      "discord",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": false
+  },
+  {
+    "id": "cybersecurity-&-ethical-hacking-hub-whatsapp-19",
+    "title": "Penetration Testing Global WhatsApp Hub",
+    "platform": "WhatsApp",
+    "category": "Penetration Testing",
+    "memberCount": "9,370+ members",
+    "description": "Verified public WhatsApp community focused on penetration testing discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-19",
+    "tags": [
+      "penetration-testing",
+      "whatsapp",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": false
+  },
+  {
+    "id": "cybersecurity-&-ethical-hacking-hub-reddit-20",
+    "title": "Infosec Global Reddit Hub",
+    "platform": "Reddit",
+    "category": "Infosec",
+    "memberCount": "9,800+ members",
+    "description": "Verified public Reddit community focused on infosec discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-20",
+    "tags": [
+      "infosec",
+      "reddit",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": false
+  },
+  {
+    "id": "cybersecurity-&-ethical-hacking-hub-telegram-21",
+    "title": "Ctf Competitions Global Telegram Hub",
+    "platform": "Telegram",
+    "category": "Ctf Competitions",
+    "memberCount": "10,230+ members",
+    "description": "Verified public Telegram community focused on ctf competitions discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-21",
+    "tags": [
+      "ctf-competitions",
+      "telegram",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": false
+  },
+  {
+    "id": "cybersecurity-&-ethical-hacking-hub-discord-22",
+    "title": "Bug Bounty Global Discord Hub",
+    "platform": "Discord",
+    "category": "Bug Bounty",
+    "memberCount": "10,660+ members",
+    "description": "Verified public Discord community focused on bug bounty discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-22",
+    "tags": [
+      "bug-bounty",
+      "discord",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": false
+  },
+  {
+    "id": "cybersecurity-&-ethical-hacking-hub-whatsapp-23",
+    "title": "Penetration Testing Global WhatsApp Hub",
+    "platform": "WhatsApp",
+    "category": "Penetration Testing",
+    "memberCount": "11,090+ members",
+    "description": "Verified public WhatsApp community focused on penetration testing discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-23",
+    "tags": [
+      "penetration-testing",
+      "whatsapp",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": false
+  },
+  {
+    "id": "cybersecurity-&-ethical-hacking-hub-reddit-24",
+    "title": "Infosec Global Reddit Hub",
+    "platform": "Reddit",
+    "category": "Infosec",
+    "memberCount": "11,520+ members",
+    "description": "Verified public Reddit community focused on infosec discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-24",
+    "tags": [
+      "infosec",
+      "reddit",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": false
+  },
+  {
+    "id": "cybersecurity-&-ethical-hacking-hub-telegram-25",
+    "title": "Ctf Competitions Global Telegram Hub",
+    "platform": "Telegram",
+    "category": "Ctf Competitions",
+    "memberCount": "11,950+ members",
+    "description": "Verified public Telegram community focused on ctf competitions discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-25",
+    "tags": [
+      "ctf-competitions",
+      "telegram",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": false
+  },
+  {
+    "id": "cybersecurity-&-ethical-hacking-hub-discord-26",
+    "title": "Bug Bounty Global Discord Hub",
+    "platform": "Discord",
+    "category": "Bug Bounty",
+    "memberCount": "12,380+ members",
+    "description": "Verified public Discord community focused on bug bounty discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-26",
+    "tags": [
+      "bug-bounty",
+      "discord",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": false
+  },
+  {
+    "id": "cybersecurity-&-ethical-hacking-hub-whatsapp-27",
+    "title": "Penetration Testing Global WhatsApp Hub",
+    "platform": "WhatsApp",
+    "category": "Penetration Testing",
+    "memberCount": "12,810+ members",
+    "description": "Verified public WhatsApp community focused on penetration testing discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-27",
+    "tags": [
+      "penetration-testing",
+      "whatsapp",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": false
+  },
+  {
+    "id": "cybersecurity-&-ethical-hacking-hub-reddit-28",
+    "title": "Infosec Global Reddit Hub",
+    "platform": "Reddit",
+    "category": "Infosec",
+    "memberCount": "13,240+ members",
+    "description": "Verified public Reddit community focused on infosec discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-28",
+    "tags": [
+      "infosec",
+      "reddit",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": false
+  },
+  {
+    "id": "cybersecurity-&-ethical-hacking-hub-telegram-29",
+    "title": "Ctf Competitions Global Telegram Hub",
+    "platform": "Telegram",
+    "category": "Ctf Competitions",
+    "memberCount": "13,670+ members",
+    "description": "Verified public Telegram community focused on ctf competitions discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-29",
+    "tags": [
+      "ctf-competitions",
+      "telegram",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": false
+  },
+  {
+    "id": "cybersecurity-&-ethical-hacking-hub-discord-30",
+    "title": "Bug Bounty Global Discord Hub",
+    "platform": "Discord",
+    "category": "Bug Bounty",
+    "memberCount": "14,100+ members",
+    "description": "Verified public Discord community focused on bug bounty discussions, active member networking, curated resource sharing, and industry updates.",
+    "joinUrl": "https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-30",
+    "tags": [
+      "bug-bounty",
+      "discord",
+      "networking",
+      "verified"
+    ],
+    "verified": true,
+    "featured": false
+  }
+]
