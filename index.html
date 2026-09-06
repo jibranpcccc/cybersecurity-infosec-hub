@@ -119,7 +119,10 @@
       "@type": "CollectionPage",
       "speakable": {
         "@type": "SpeakableSpecification",
-        "cssSelector": [".geo-answer-block h2", ".geo-answer-block p"]
+        "cssSelector": [
+          ".geo-answer-block h2",
+          ".geo-answer-block p"
+        ]
       },
       "@id": "https://jibranpcccc.github.io/cybersecurity-infosec-hub/#webpage",
       "url": "https://jibranpcccc.github.io/cybersecurity-infosec-hub/",
@@ -304,42 +307,17 @@
           }
         }
       ]
+    },
+    {
+      "@type": "SpeakableSpecification",
+      "@id": "https://jibranpcccc.github.io/cybersecurity-infosec-hub/#speakable",
+      "cssSelector": [
+        ".geo-answer-block h2",
+        ".geo-answer-block p"
+      ]
     }
   ]
 }
-    
-        // Copy Invite Link with Feedback
-        function copyInviteLink(url, btn) {
-            if (!url || url === '#') return;
-            navigator.clipboard.writeText(url).then(() => {
-                const origHtml = btn.innerHTML;
-                btn.innerHTML = '<span>✓ Copied!</span>';
-                btn.classList.add('copied');
-                setTimeout(() => {
-                    btn.innerHTML = origHtml;
-                    btn.classList.remove('copied');
-                }, 2000);
-            }).catch(() => {
-                window.open(url, '_blank');
-            });
-        }
-
-        // Power-User Keyboard Shortcut: Press '/' to Focus Search, 'Escape' to Clear
-        document.addEventListener('keydown', (e) => {
-            const searchEl = document.getElementById('searchInput') || document.getElementById('search-input');
-            if (!searchEl) return;
-            if (e.key === '/' && document.activeElement !== searchEl) {
-                e.preventDefault();
-                searchEl.focus();
-                searchEl.select();
-            } else if (e.key === 'Escape' && document.activeElement === searchEl) {
-                searchEl.value = '';
-                if (typeof filterCards === 'function') filterCards();
-                if (typeof clearSearch === 'function') clearSearch();
-                searchEl.blur();
-            }
-        });
-        
     </script>
     
     <style id="bespoke-theme">
@@ -452,11 +430,11 @@
 
         .tags-row { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 18px; }
         .tag { font-size: 0.72rem; color: var(--accent); font-family: var(--mono-font); background: rgba(0,255,102,0.08); padding: 2px 6px; border-radius: 3px; }
-        .card-footer { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 14px; }
+        .card-footer { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; border-top: 1px solid var(--border); padding-top: 14px; }
         .activity-pulse { font-size: 0.8rem; color: var(--accent); display: flex; align-items: center; gap: 6px; font-family: var(--mono-font); }
         .pulse-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 8px var(--accent); }
 
-        .card-actions { display: flex; gap: 8px; align-items: center; }
+        .card-actions { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
         .btn-copy-invite { background: rgba(255,255,255,0.05); color: var(--muted); border: 1px solid var(--border); padding: 7px 12px; border-radius: 3px; font-size: 0.8rem; font-family: var(--mono-font); cursor: pointer; transition: all 0.2s; }
         .btn-copy-invite:hover { background: rgba(255,255,255,0.12); color: #fff; }
         .btn-copy-invite.copied { background: rgba(0, 255, 102, 0.2); color: var(--accent); border-color: var(--accent); }
@@ -591,7 +569,10 @@
             <div class="tags-row"><span class="tag">#ctf-competitions</span><span class="tag">#telegram</span><span class="tag">#networking</span><span class="tag">#verified</span></div>
             <div class="card-footer">
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
-                <a href="https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-1" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                <div class="card-actions">
+                    <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-1')">📋 Copy Invite Link</button>
+                    <a href="https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-1" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                </div>
             </div>
         </div>
         
@@ -611,7 +592,10 @@
             <div class="tags-row"><span class="tag">#bug-bounty</span><span class="tag">#discord</span><span class="tag">#networking</span><span class="tag">#verified</span></div>
             <div class="card-footer">
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
-                <a href="https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-2" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                <div class="card-actions">
+                    <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-2')">📋 Copy Invite Link</button>
+                    <a href="https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-2" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                </div>
             </div>
         </div>
         
@@ -631,7 +615,10 @@
             <div class="tags-row"><span class="tag">#penetration-testing</span><span class="tag">#whatsapp</span><span class="tag">#networking</span><span class="tag">#verified</span></div>
             <div class="card-footer">
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
-                <a href="https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-3" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                <div class="card-actions">
+                    <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-3')">📋 Copy Invite Link</button>
+                    <a href="https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-3" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                </div>
             </div>
         </div>
         
@@ -651,7 +638,10 @@
             <div class="tags-row"><span class="tag">#infosec</span><span class="tag">#reddit</span><span class="tag">#networking</span><span class="tag">#verified</span></div>
             <div class="card-footer">
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
-                <a href="https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-4" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                <div class="card-actions">
+                    <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-4')">📋 Copy Invite Link</button>
+                    <a href="https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-4" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                </div>
             </div>
         </div>
         
@@ -671,7 +661,10 @@
             <div class="tags-row"><span class="tag">#ctf-competitions</span><span class="tag">#telegram</span><span class="tag">#networking</span><span class="tag">#verified</span></div>
             <div class="card-footer">
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
-                <a href="https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-5" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                <div class="card-actions">
+                    <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-5')">📋 Copy Invite Link</button>
+                    <a href="https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-5" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                </div>
             </div>
         </div>
         
@@ -691,7 +684,10 @@
             <div class="tags-row"><span class="tag">#bug-bounty</span><span class="tag">#discord</span><span class="tag">#networking</span><span class="tag">#verified</span></div>
             <div class="card-footer">
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
-                <a href="https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-6" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                <div class="card-actions">
+                    <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-6')">📋 Copy Invite Link</button>
+                    <a href="https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-6" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                </div>
             </div>
         </div>
         
@@ -711,7 +707,10 @@
             <div class="tags-row"><span class="tag">#penetration-testing</span><span class="tag">#whatsapp</span><span class="tag">#networking</span><span class="tag">#verified</span></div>
             <div class="card-footer">
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
-                <a href="https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-7" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                <div class="card-actions">
+                    <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-7')">📋 Copy Invite Link</button>
+                    <a href="https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-7" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                </div>
             </div>
         </div>
         
@@ -731,7 +730,10 @@
             <div class="tags-row"><span class="tag">#infosec</span><span class="tag">#reddit</span><span class="tag">#networking</span><span class="tag">#verified</span></div>
             <div class="card-footer">
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
-                <a href="https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-8" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                <div class="card-actions">
+                    <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-8')">📋 Copy Invite Link</button>
+                    <a href="https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-8" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                </div>
             </div>
         </div>
         
@@ -751,7 +753,10 @@
             <div class="tags-row"><span class="tag">#ctf-competitions</span><span class="tag">#telegram</span><span class="tag">#networking</span><span class="tag">#verified</span></div>
             <div class="card-footer">
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
-                <a href="https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-9" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                <div class="card-actions">
+                    <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-9')">📋 Copy Invite Link</button>
+                    <a href="https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-9" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                </div>
             </div>
         </div>
         
@@ -771,7 +776,10 @@
             <div class="tags-row"><span class="tag">#bug-bounty</span><span class="tag">#discord</span><span class="tag">#networking</span><span class="tag">#verified</span></div>
             <div class="card-footer">
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
-                <a href="https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-10" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                <div class="card-actions">
+                    <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-10')">📋 Copy Invite Link</button>
+                    <a href="https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-10" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                </div>
             </div>
         </div>
         
@@ -791,7 +799,10 @@
             <div class="tags-row"><span class="tag">#penetration-testing</span><span class="tag">#whatsapp</span><span class="tag">#networking</span><span class="tag">#verified</span></div>
             <div class="card-footer">
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
-                <a href="https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-11" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                <div class="card-actions">
+                    <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-11')">📋 Copy Invite Link</button>
+                    <a href="https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-11" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                </div>
             </div>
         </div>
         
@@ -811,7 +822,10 @@
             <div class="tags-row"><span class="tag">#infosec</span><span class="tag">#reddit</span><span class="tag">#networking</span><span class="tag">#verified</span></div>
             <div class="card-footer">
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
-                <a href="https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-12" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                <div class="card-actions">
+                    <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-12')">📋 Copy Invite Link</button>
+                    <a href="https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-12" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                </div>
             </div>
         </div>
         
@@ -831,7 +845,10 @@
             <div class="tags-row"><span class="tag">#ctf-competitions</span><span class="tag">#telegram</span><span class="tag">#networking</span><span class="tag">#verified</span></div>
             <div class="card-footer">
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
-                <a href="https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-13" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                <div class="card-actions">
+                    <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-13')">📋 Copy Invite Link</button>
+                    <a href="https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-13" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                </div>
             </div>
         </div>
         
@@ -851,7 +868,10 @@
             <div class="tags-row"><span class="tag">#bug-bounty</span><span class="tag">#discord</span><span class="tag">#networking</span><span class="tag">#verified</span></div>
             <div class="card-footer">
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
-                <a href="https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-14" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                <div class="card-actions">
+                    <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-14')">📋 Copy Invite Link</button>
+                    <a href="https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-14" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                </div>
             </div>
         </div>
         
@@ -871,7 +891,10 @@
             <div class="tags-row"><span class="tag">#penetration-testing</span><span class="tag">#whatsapp</span><span class="tag">#networking</span><span class="tag">#verified</span></div>
             <div class="card-footer">
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
-                <a href="https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-15" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                <div class="card-actions">
+                    <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-15')">📋 Copy Invite Link</button>
+                    <a href="https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-15" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                </div>
             </div>
         </div>
         
@@ -891,7 +914,10 @@
             <div class="tags-row"><span class="tag">#infosec</span><span class="tag">#reddit</span><span class="tag">#networking</span><span class="tag">#verified</span></div>
             <div class="card-footer">
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
-                <a href="https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-16" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                <div class="card-actions">
+                    <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-16')">📋 Copy Invite Link</button>
+                    <a href="https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-16" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                </div>
             </div>
         </div>
         
@@ -911,7 +937,10 @@
             <div class="tags-row"><span class="tag">#ctf-competitions</span><span class="tag">#telegram</span><span class="tag">#networking</span><span class="tag">#verified</span></div>
             <div class="card-footer">
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
-                <a href="https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-17" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                <div class="card-actions">
+                    <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-17')">📋 Copy Invite Link</button>
+                    <a href="https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-17" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                </div>
             </div>
         </div>
         
@@ -931,7 +960,10 @@
             <div class="tags-row"><span class="tag">#bug-bounty</span><span class="tag">#discord</span><span class="tag">#networking</span><span class="tag">#verified</span></div>
             <div class="card-footer">
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
-                <a href="https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-18" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                <div class="card-actions">
+                    <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-18')">📋 Copy Invite Link</button>
+                    <a href="https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-18" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                </div>
             </div>
         </div>
         
@@ -951,7 +983,10 @@
             <div class="tags-row"><span class="tag">#penetration-testing</span><span class="tag">#whatsapp</span><span class="tag">#networking</span><span class="tag">#verified</span></div>
             <div class="card-footer">
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
-                <a href="https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-19" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                <div class="card-actions">
+                    <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-19')">📋 Copy Invite Link</button>
+                    <a href="https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-19" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                </div>
             </div>
         </div>
         
@@ -971,7 +1006,10 @@
             <div class="tags-row"><span class="tag">#infosec</span><span class="tag">#reddit</span><span class="tag">#networking</span><span class="tag">#verified</span></div>
             <div class="card-footer">
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
-                <a href="https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-20" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                <div class="card-actions">
+                    <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-20')">📋 Copy Invite Link</button>
+                    <a href="https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-20" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                </div>
             </div>
         </div>
         
@@ -991,7 +1029,10 @@
             <div class="tags-row"><span class="tag">#ctf-competitions</span><span class="tag">#telegram</span><span class="tag">#networking</span><span class="tag">#verified</span></div>
             <div class="card-footer">
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
-                <a href="https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-21" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                <div class="card-actions">
+                    <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-21')">📋 Copy Invite Link</button>
+                    <a href="https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-21" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                </div>
             </div>
         </div>
         
@@ -1011,7 +1052,10 @@
             <div class="tags-row"><span class="tag">#bug-bounty</span><span class="tag">#discord</span><span class="tag">#networking</span><span class="tag">#verified</span></div>
             <div class="card-footer">
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
-                <a href="https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-22" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                <div class="card-actions">
+                    <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-22')">📋 Copy Invite Link</button>
+                    <a href="https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-22" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                </div>
             </div>
         </div>
         
@@ -1031,7 +1075,10 @@
             <div class="tags-row"><span class="tag">#penetration-testing</span><span class="tag">#whatsapp</span><span class="tag">#networking</span><span class="tag">#verified</span></div>
             <div class="card-footer">
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
-                <a href="https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-23" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                <div class="card-actions">
+                    <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-23')">📋 Copy Invite Link</button>
+                    <a href="https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-23" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                </div>
             </div>
         </div>
         
@@ -1051,7 +1098,10 @@
             <div class="tags-row"><span class="tag">#infosec</span><span class="tag">#reddit</span><span class="tag">#networking</span><span class="tag">#verified</span></div>
             <div class="card-footer">
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
-                <a href="https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-24" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                <div class="card-actions">
+                    <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-24')">📋 Copy Invite Link</button>
+                    <a href="https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-24" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                </div>
             </div>
         </div>
         
@@ -1071,7 +1121,10 @@
             <div class="tags-row"><span class="tag">#ctf-competitions</span><span class="tag">#telegram</span><span class="tag">#networking</span><span class="tag">#verified</span></div>
             <div class="card-footer">
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
-                <a href="https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-25" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                <div class="card-actions">
+                    <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-25')">📋 Copy Invite Link</button>
+                    <a href="https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-25" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                </div>
             </div>
         </div>
         
@@ -1091,7 +1144,10 @@
             <div class="tags-row"><span class="tag">#bug-bounty</span><span class="tag">#discord</span><span class="tag">#networking</span><span class="tag">#verified</span></div>
             <div class="card-footer">
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
-                <a href="https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-26" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                <div class="card-actions">
+                    <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-26')">📋 Copy Invite Link</button>
+                    <a href="https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-26" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                </div>
             </div>
         </div>
         
@@ -1111,7 +1167,10 @@
             <div class="tags-row"><span class="tag">#penetration-testing</span><span class="tag">#whatsapp</span><span class="tag">#networking</span><span class="tag">#verified</span></div>
             <div class="card-footer">
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
-                <a href="https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-27" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                <div class="card-actions">
+                    <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-27')">📋 Copy Invite Link</button>
+                    <a href="https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-27" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                </div>
             </div>
         </div>
         
@@ -1131,7 +1190,10 @@
             <div class="tags-row"><span class="tag">#infosec</span><span class="tag">#reddit</span><span class="tag">#networking</span><span class="tag">#verified</span></div>
             <div class="card-footer">
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
-                <a href="https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-28" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                <div class="card-actions">
+                    <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-28')">📋 Copy Invite Link</button>
+                    <a href="https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-28" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                </div>
             </div>
         </div>
         
@@ -1151,7 +1213,10 @@
             <div class="tags-row"><span class="tag">#ctf-competitions</span><span class="tag">#telegram</span><span class="tag">#networking</span><span class="tag">#verified</span></div>
             <div class="card-footer">
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
-                <a href="https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-29" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                <div class="card-actions">
+                    <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-29')">📋 Copy Invite Link</button>
+                    <a href="https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-29" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                </div>
             </div>
         </div>
         
@@ -1171,7 +1236,10 @@
             <div class="tags-row"><span class="tag">#bug-bounty</span><span class="tag">#discord</span><span class="tag">#networking</span><span class="tag">#verified</span></div>
             <div class="card-footer">
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
-                <a href="https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-30" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                <div class="card-actions">
+                    <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-30')">📋 Copy Invite Link</button>
+                    <a href="https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-30" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
+                </div>
             </div>
         </div>
         
@@ -1272,18 +1340,35 @@
         });
     
         // Copy Invite Link with Feedback
-        function copyInviteLink(url, btn) {
-            if (!url || url === '#') return;
-            navigator.clipboard.writeText(url).then(() => {
-                const origHtml = btn.innerHTML;
-                btn.innerHTML = '<span>✓ Copied!</span>';
-                btn.classList.add('copied');
-                setTimeout(() => {
-                    btn.innerHTML = origHtml;
-                    btn.classList.remove('copied');
-                }, 2000);
-            }).catch(() => {
-                window.open(url, '_blank');
+            // Copy Invite Link with Interactive Feedback
+    function copyInviteLink(event, url) {
+        if (event && event.preventDefault) event.preventDefault();
+        if (event && event.stopPropagation) event.stopPropagation();
+        var targetUrl = (typeof event === 'string') ? event : url;
+        var btn = (typeof event === 'string') ? url : (event ? (event.currentTarget || event.target) : null);
+        if (!btn && typeof this !== 'undefined') btn = this;
+        if (btn && btn.closest) {
+            btn = btn.closest('.btn-copy-invite') || btn;
+        }
+        if (!targetUrl || targetUrl === '#') return;
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(targetUrl).then(function() {
+                if (btn) {
+                    var origHtml = btn.innerHTML;
+                    btn.innerHTML = '<span>✓ Copied!</span>';
+                    btn.classList.add('copied');
+                    setTimeout(function() {
+                        btn.innerHTML = origHtml;
+                        btn.classList.remove('copied');
+                    }, 2000);
+                }
+            }).catch(function() {
+                window.open(targetUrl, '_blank');
+            });
+        } else {
+            window.open(targetUrl, '_blank');
+        }
+    }
             });
         }
 
