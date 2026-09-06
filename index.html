@@ -432,7 +432,14 @@
         .tag { font-size: 0.72rem; color: var(--accent); font-family: var(--mono-font); background: rgba(0,255,102,0.08); padding: 2px 6px; border-radius: 3px; }
         .card-footer { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; border-top: 1px solid var(--border); padding-top: 14px; }
         .activity-pulse { font-size: 0.8rem; color: var(--accent); display: flex; align-items: center; gap: 6px; font-family: var(--mono-font); }
-        .pulse-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 8px var(--accent); }
+        
+        @keyframes pulseGlow {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(0, 255, 102, 0.7); }
+            70% { transform: scale(1.05); box-shadow: 0 0 0 6px rgba(0, 0, 0, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(0, 0, 0, 0); }
+        }
+        .pulse-dot {
+            animation: pulseGlow 2s infinite cubic-bezier(0.4, 0, 0.6, 1); width: 7px; height: 7px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 8px var(--accent); }
 
         .card-actions { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
         .btn-copy-invite { background: rgba(255,255,255,0.05); color: var(--muted); border: 1px solid var(--border); padding: 7px 12px; border-radius: 3px; font-size: 0.8rem; font-family: var(--mono-font); cursor: pointer; transition: all 0.2s; }
@@ -453,6 +460,43 @@
         @media (max-width: 768px) { .mobile-dock { display: flex; } body { padding-bottom: 90px; } .footer-grid { grid-template-columns: 1fr; } .nav-menu { display: none; } }
         .dock-btn { flex: 1; padding: 10px; border-radius: 4px; background: var(--surface); border: 1px solid var(--border); color: #fff; font-weight: 600; font-size: 0.8rem; cursor: pointer; text-align: center; font-family: var(--mono-font); }
         .dock-btn-accent { background: var(--accent); color: #000; border-color: var(--accent); font-weight: 800; }
+    
+        /* Mobile Ergonomics & 375px Viewport Polish */
+        @media (max-width: 480px) {
+            .container { padding: 16px 14px; }
+            .grid { grid-template-columns: 1fr; gap: 18px; }
+            h1 { font-size: 1.85rem !important; }
+            .subtitle { font-size: 0.95rem; }
+            .card { padding: 18px 16px; }
+            .card-actions { width: 100%; display: flex; gap: 8px; }
+            .btn-copy-invite, .btn-join {
+                flex: 1;
+                min-height: 44px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                padding: 10px 14px;
+                font-size: 0.85rem;
+                text-align: center;
+            }
+            .dock-btn {
+                min-height: 44px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .search-box input {
+                min-height: 44px;
+            }
+            .filter-btn {
+                min-height: 38px;
+                padding: 8px 14px;
+            }
+            .matcher-select {
+                min-height: 44px;
+                width: 100%;
+            }
+        }
     </style>
     
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Chakra+Petch:wght@500;600;700&display=swap" rel="stylesheet">
@@ -571,7 +615,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-1')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-1')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-1')">📋 Copy Invite</button><a href="https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-1" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-1" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
@@ -594,7 +638,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-2')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-2')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-2')">📋 Copy Invite</button><a href="https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-2" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-2" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
@@ -617,7 +661,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-3')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-3')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-3')">📋 Copy Invite</button><a href="https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-3" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-3" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
@@ -640,7 +684,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-4')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-4')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-4')">📋 Copy Invite</button><a href="https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-4" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-4" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
@@ -663,7 +707,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-5')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-5')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-5')">📋 Copy Invite</button><a href="https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-5" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-5" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
@@ -686,7 +730,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-6')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-6')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-6')">📋 Copy Invite</button><a href="https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-6" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-6" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
@@ -709,7 +753,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-7')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-7')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-7')">📋 Copy Invite</button><a href="https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-7" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-7" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
@@ -732,7 +776,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-8')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-8')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-8')">📋 Copy Invite</button><a href="https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-8" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-8" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
@@ -755,7 +799,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-9')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-9')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-9')">📋 Copy Invite</button><a href="https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-9" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-9" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
@@ -778,7 +822,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-10')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-10')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-10')">📋 Copy Invite</button><a href="https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-10" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-10" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
@@ -801,7 +845,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-11')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-11')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-11')">📋 Copy Invite</button><a href="https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-11" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-11" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
@@ -824,7 +868,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-12')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-12')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-12')">📋 Copy Invite</button><a href="https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-12" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-12" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
@@ -847,7 +891,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-13')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-13')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-13')">📋 Copy Invite</button><a href="https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-13" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-13" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
@@ -870,7 +914,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-14')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-14')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-14')">📋 Copy Invite</button><a href="https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-14" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-14" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
@@ -893,7 +937,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-15')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-15')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-15')">📋 Copy Invite</button><a href="https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-15" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-15" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
@@ -916,7 +960,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-16')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-16')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-16')">📋 Copy Invite</button><a href="https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-16" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-16" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
@@ -939,7 +983,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-17')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-17')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-17')">📋 Copy Invite</button><a href="https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-17" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-17" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
@@ -962,7 +1006,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-18')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-18')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-18')">📋 Copy Invite</button><a href="https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-18" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-18" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
@@ -985,7 +1029,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-19')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-19')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-19')">📋 Copy Invite</button><a href="https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-19" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-19" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
@@ -1008,7 +1052,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-20')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-20')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-20')">📋 Copy Invite</button><a href="https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-20" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-20" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
@@ -1031,7 +1075,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-21')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-21')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-21')">📋 Copy Invite</button><a href="https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-21" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-21" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
@@ -1054,7 +1098,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-22')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-22')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-22')">📋 Copy Invite</button><a href="https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-22" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-22" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
@@ -1077,7 +1121,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-23')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-23')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-23')">📋 Copy Invite</button><a href="https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-23" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-23" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
@@ -1100,7 +1144,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-24')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-24')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-24')">📋 Copy Invite</button><a href="https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-24" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-24" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
@@ -1123,7 +1167,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-25')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-25')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-25')">📋 Copy Invite</button><a href="https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-25" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-25" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
@@ -1146,7 +1190,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-26')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-26')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-26')">📋 Copy Invite</button><a href="https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-26" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-26" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
@@ -1169,7 +1213,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-27')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-27')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-27')">📋 Copy Invite</button><a href="https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-27" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://whatsapp.com/community/cybersecurity-&-ethical-hacking-hub-whatsapp-27" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
@@ -1192,7 +1236,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-28')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-28')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-28')">📋 Copy Invite</button><a href="https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-28" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://reddit.com/community/cybersecurity-&-ethical-hacking-hub-reddit-28" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
@@ -1215,7 +1259,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-29')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-29')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-29')">📋 Copy Invite</button><a href="https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-29" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://telegram.com/community/cybersecurity-&-ethical-hacking-hub-telegram-29" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
@@ -1238,7 +1282,7 @@
                 <span class="activity-pulse"><span class="pulse-dot"></span> Live Channel</span>
                 <div class="card-actions">
                     <button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-30')">📋 Copy Invite Link</button>
-                    <div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-30')">📋 Copy Invite</button><div class="card-actions"><button class="btn-copy-invite" onclick="copyInviteLink(event, 'https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-30')">📋 Copy Invite</button><a href="https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-30" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a></div></div>
+                    <a href="https://discord.com/community/cybersecurity-&-ethical-hacking-hub-discord-30" target="_blank" rel="noopener noreferrer" class="btn-join">Join Community →</a>
                 </div>
             </div>
         </div>
@@ -1339,20 +1383,37 @@
             });
         });
     
-        // Copy Invite Link with Feedback
-            // Copy Invite Link with Interactive Feedback
-    function copyInviteLink(event, url) {
-        if (event && event.preventDefault) event.preventDefault();
-        if (event && event.stopPropagation) event.stopPropagation();
-        var targetUrl = (typeof event === 'string') ? event : url;
-        var btn = (typeof event === 'string') ? url : (event ? (event.currentTarget || event.target) : null);
-        if (!btn && typeof this !== 'undefined') btn = this;
-        if (btn && btn.closest) {
-            btn = btn.closest('.btn-copy-invite') || btn;
+        // Robust Clipboard Copy with Feedback & Legacy Fallback
+        function fallbackCopy(text, cb) {
+            var ta = document.createElement('textarea');
+            ta.value = text;
+            ta.style.position = 'fixed';
+            ta.style.left = '-9999px';
+            ta.style.top = '0';
+            ta.setAttribute('readonly', '');
+            document.body.appendChild(ta);
+            ta.focus();
+            ta.select();
+            try {
+                var successful = document.execCommand('copy');
+                if (successful && cb) cb();
+            } catch (err) {
+                console.warn('Fallback copy failed', err);
+            }
+            document.body.removeChild(ta);
         }
-        if (!targetUrl || targetUrl === '#') return;
-        if (navigator.clipboard && navigator.clipboard.writeText) {
-            navigator.clipboard.writeText(targetUrl).then(function() {
+
+        function copyInviteLink(event, url) {
+            if (event && event.preventDefault) event.preventDefault();
+            if (event && event.stopPropagation) event.stopPropagation();
+            var targetUrl = (typeof event === 'string') ? event : url;
+            var btn = (typeof event === 'string') ? null : (event ? (event.currentTarget || event.target) : null);
+            if (btn && btn.closest) {
+                btn = btn.closest('.btn-copy-invite') || btn;
+            }
+            if (!targetUrl || targetUrl === '#') return;
+
+            function showFeedback() {
                 if (btn) {
                     var origHtml = btn.innerHTML;
                     btn.innerHTML = '<span>✓ Copied!</span>';
@@ -1362,18 +1423,23 @@
                         btn.classList.remove('copied');
                     }, 2000);
                 }
-            }).catch(function() {
-                window.open(targetUrl, '_blank');
-            });
-        } else {
-            window.open(targetUrl, '_blank');
+            }
+
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(targetUrl).then(showFeedback).catch(function() {
+                    fallbackCopy(targetUrl, showFeedback);
+                });
+            } else {
+                fallbackCopy(targetUrl, showFeedback);
+            }
         }
-    }
-            // Power-User Keyboard Shortcut: Press '/' to Focus Search, 'Escape' to Clear
+
+        // Power-User Keyboard Shortcut: Press '/' to Focus Search, 'Escape' to Clear
         document.addEventListener('keydown', (e) => {
             const searchEl = document.getElementById('searchInput') || document.getElementById('search-input');
             if (!searchEl) return;
-            if (e.key === '/' && document.activeElement !== searchEl) {
+            const activeTag = (document.activeElement && document.activeElement.tagName) ? document.activeElement.tagName.toLowerCase() : '';
+            if (e.key === '/' && activeTag !== 'input' && activeTag !== 'textarea' && activeTag !== 'select') {
                 e.preventDefault();
                 searchEl.focus();
                 searchEl.select();
@@ -1384,7 +1450,6 @@
                 searchEl.blur();
             }
         });
-        
     </script>
 </body>
 </html>
