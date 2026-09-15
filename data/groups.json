@@ -1,5 +1,23 @@
 [
   {
+    "id": "cybersecurity-infosec-hub-github-20260915-1",
+    "title": "OWASP Web Application Security Discussions",
+    "platform": "GitHub",
+    "category": "OWASP",
+    "memberCount": "100,000+ members",
+    "description": "Official OWASP Cheat Sheet repository discussions on API security, authentication bypasses, and CSRF defense.",
+    "joinUrl": "https://github.com/OWASP/CheatSheetSeries/discussions",
+    "tags": [
+      "owasp",
+      "apisecurity",
+      "github"
+    ],
+    "verified": true,
+    "featured": true,
+    "isTodaysPick": true,
+    "lastUpdated": "2026-09-15"
+  },
+  {
     "id": "cybersecurity-infosec-hub-forum-20260914-1",
     "title": "0x00sec Security Researchers Forum",
     "platform": "Forum",
@@ -15,7 +33,7 @@
     ],
     "verified": true,
     "featured": true,
-    "isTodaysPick": true,
+    "isTodaysPick": false,
     "lastUpdated": "2026-09-14"
   },
   {
