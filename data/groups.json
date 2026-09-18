@@ -1,5 +1,24 @@
 [
   {
+    "id": "cybersecurity-infosec-hub-telegram-20260918-1",
+    "title": "Infosec Zero-Day & CVE Alerts Telegram",
+    "platform": "Telegram",
+    "category": "Alerts",
+    "memberCount": "62,000+ members",
+    "description": "Direct alerts on newly published CVEs, weaponized exploits, CISA alerts, and dark web leaks.",
+    "joinUrl": "https://t.me/infosec_alerts",
+    "tags": [
+      "telegram",
+      "cve",
+      "zero-day",
+      "alerts"
+    ],
+    "verified": true,
+    "featured": true,
+    "isTodaysPick": true,
+    "lastUpdated": "2026-09-18"
+  },
+  {
     "id": "cybersecurity-infosec-hub-github-20260915-1",
     "title": "OWASP Web Application Security Discussions",
     "platform": "GitHub",
@@ -14,7 +33,7 @@
     ],
     "verified": true,
     "featured": true,
-    "isTodaysPick": true,
+    "isTodaysPick": false,
     "lastUpdated": "2026-09-15"
   },
   {
