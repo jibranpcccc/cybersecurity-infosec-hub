@@ -1,5 +1,23 @@
 [
   {
+    "id": "cybersecurity-infosec-hub-telegram-20260922-1",
+    "title": "Python Security Scripts Channel",
+    "platform": "Telegram",
+    "category": "Scripts",
+    "memberCount": "85,000+ members",
+    "description": "Curated security scripts, log parsers, and threat intelligence ingestion pipelines.",
+    "joinUrl": "https://t.me/python_scripts",
+    "tags": [
+      "telegram",
+      "python",
+      "security-scripts"
+    ],
+    "verified": true,
+    "featured": true,
+    "isTodaysPick": true,
+    "lastUpdated": "2026-09-22"
+  },
+  {
     "id": "cybersecurity-infosec-hub-reddit-20260921-1",
     "title": "r/Python Exploit Scripting & Automation",
     "platform": "Reddit",
@@ -15,7 +33,7 @@
     ],
     "verified": true,
     "featured": true,
-    "isTodaysPick": true,
+    "isTodaysPick": false,
     "lastUpdated": "2026-09-21"
   },
   {
