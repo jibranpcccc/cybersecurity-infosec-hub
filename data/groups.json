@@ -1,5 +1,23 @@
 [
   {
+    "id": "cybersecurity-infosec-hub-reddit-20260925-1",
+    "title": "r/programming Secure Coding Standards",
+    "platform": "Reddit",
+    "category": "Programming",
+    "memberCount": "5,800,000+ members",
+    "description": "Industry discussions on software supply chain security, dependency auditing, and safe development.",
+    "joinUrl": "https://www.reddit.com/r/programming/",
+    "tags": [
+      "programming",
+      "secure-coding",
+      "reddit"
+    ],
+    "verified": true,
+    "featured": true,
+    "isTodaysPick": true,
+    "lastUpdated": "2026-09-25"
+  },
+  {
     "id": "cybersecurity-infosec-hub-discord-20260924-1",
     "title": "The Programmer's Hangout Discord",
     "platform": "Discord",
@@ -14,7 +32,7 @@
     ],
     "verified": true,
     "featured": true,
-    "isTodaysPick": true,
+    "isTodaysPick": false,
     "lastUpdated": "2026-09-24"
   },
   {
