@@ -1,5 +1,24 @@
 [
   {
+    "id": "cybersecurity-infosec-hub-discord-20260927-1",
+    "title": "Devcord Secure Engineering Discord",
+    "platform": "Discord",
+    "category": "DevSecOps",
+    "memberCount": "75,000+ members",
+    "description": "Integrating SAST and DAST scanners into CI/CD pipelines, container auditing, and secrets management.",
+    "joinUrl": "https://discord.gg/devcord",
+    "tags": [
+      "devsecops",
+      "sast",
+      "security",
+      "discord"
+    ],
+    "verified": true,
+    "featured": true,
+    "isTodaysPick": true,
+    "lastUpdated": "2026-09-27"
+  },
+  {
     "id": "cybersecurity-infosec-hub-reddit-20260925-1",
     "title": "r/programming Secure Coding Standards",
     "platform": "Reddit",
@@ -14,7 +33,7 @@
     ],
     "verified": true,
     "featured": true,
-    "isTodaysPick": true,
+    "isTodaysPick": false,
     "lastUpdated": "2026-09-25"
   },
   {
