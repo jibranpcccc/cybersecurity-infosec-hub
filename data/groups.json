@@ -1,5 +1,23 @@
 [
   {
+    "id": "cybersecurity-infosec-hub-discord-20260929-1",
+    "title": "Rust Systems & Memory Safety Discord",
+    "platform": "Discord",
+    "category": "Rust Safety",
+    "memberCount": "95,000+ members",
+    "description": "Building memory-safe system tools and malware sandboxes with Rust.",
+    "joinUrl": "https://discord.gg/rust-lang",
+    "tags": [
+      "rust",
+      "memory-safety",
+      "discord"
+    ],
+    "verified": true,
+    "featured": true,
+    "isTodaysPick": true,
+    "lastUpdated": "2026-09-29"
+  },
+  {
     "id": "cybersecurity-infosec-hub-discord-20260927-1",
     "title": "Devcord Secure Engineering Discord",
     "platform": "Discord",
@@ -15,7 +33,7 @@
     ],
     "verified": true,
     "featured": true,
-    "isTodaysPick": true,
+    "isTodaysPick": false,
     "lastUpdated": "2026-09-27"
   },
   {
