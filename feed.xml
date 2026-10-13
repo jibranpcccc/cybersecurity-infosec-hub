@@ -4,10 +4,17 @@
     <title>Cybersecurity &amp; Ethical Hacking Hub</title>
     <link>https://jibranpcccc.github.io/cybersecurity-infosec-hub/</link>
     <description>Verified community directory and updates.</description>
-    <lastBuildDate>Sun, 11 Oct 2026 06:00:18 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 13 Oct 2026 06:00:19 GMT</lastBuildDate>
     <atom:link href="https://jibranpcccc.github.io/cybersecurity-infosec-hub/feed.xml" rel="self" type="application/rss+xml"/>
     <atom:link href="https://pubsubhubbub.appspot.com/" rel="hub"/>
-                                                                                                        <item>
+                                                                                                            <item>
+      <title>📅 Today's Fresh Pick: TypeScript Community Discord (Discord)</title>
+      <link>https://discord.gg/typescript</link>
+      <guid isPermaLink="false">https://jibranpcccc.github.io/cybersecurity-infosec-hub/#cybersecurity-infosec-hub-discord-20261013-1-2026-10-13</guid>
+      <pubDate>Tue, 13 Oct 2026 06:00:19 GMT</pubDate>
+      <description>Newly verified community added to Cybersecurity &amp; Ethical Hacking Hub: Active community for advanced TypeScript types, generics, compiler plugins, and framework integrations.</description>
+    </item>
+<item>
       <title>📅 Today's Fresh Pick: r/typescript Architecture (Reddit)</title>
       <link>https://www.reddit.com/r/typescript/</link>
       <guid isPermaLink="false">https://jibranpcccc.github.io/cybersecurity-infosec-hub/#cybersecurity-infosec-hub-reddit-20261011-1-2026-10-11</guid>
@@ -174,13 +181,6 @@
       <guid isPermaLink="false">https://jibranpcccc.github.io/cybersecurity-infosec-hub/#cybersecurity-infosec-hub-discord-20260913-1-2026-09-13</guid>
       <pubDate>Sun, 13 Sep 2026 14:02:10 GMT</pubDate>
       <description>Newly verified community added to Cybersecurity &amp; Ethical Hacking Hub: Community discussing application security, web exploit chains, and security audit tools.</description>
-    </item>
-<item>
-      <title>📅 Today's Fresh Pick: r/threatintel Threat Profiling &amp; Intel (Reddit)</title>
-      <link>https://www.reddit.com/r/threatintel/</link>
-      <guid isPermaLink="false">https://jibranpcccc.github.io/cybersecurity-infosec-hub/#cybersecurity-infosec-hub-reddit-20260913-1-2026-09-13</guid>
-      <pubDate>Sun, 13 Sep 2026 08:29:50 GMT</pubDate>
-      <description>Newly verified community added to Cybersecurity &amp; Ethical Hacking Hub: Adversary TTPs, MITRE ATT&amp;CK enterprise frameworks, threat intelligence feeds, and IOC tracking.</description>
     </item>
   </channel>
 </rss>
