@@ -4,10 +4,17 @@
     <title>Cybersecurity &amp; Ethical Hacking Hub</title>
     <link>https://jibranpcccc.github.io/cybersecurity-infosec-hub/</link>
     <description>Verified community directory and updates.</description>
-    <lastBuildDate>Tue, 13 Oct 2026 06:00:19 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 06:00:19 GMT</lastBuildDate>
     <atom:link href="https://jibranpcccc.github.io/cybersecurity-infosec-hub/feed.xml" rel="self" type="application/rss+xml"/>
     <atom:link href="https://pubsubhubbub.appspot.com/" rel="hub"/>
-                                                                                                            <item>
+                                                                                                                <item>
+      <title>📅 Today's Fresh Pick: r/cpp High Performance Systems (Reddit)</title>
+      <link>https://www.reddit.com/r/cpp/</link>
+      <guid isPermaLink="false">https://jibranpcccc.github.io/cybersecurity-infosec-hub/#cybersecurity-infosec-hub-reddit-20261015-1-2026-10-15</guid>
+      <pubDate>Thu, 15 Oct 2026 06:00:19 GMT</pubDate>
+      <description>Newly verified community added to Cybersecurity &amp; Ethical Hacking Hub: Discussions on modern C++ (C++17/20/23), memory models, template metaprogramming, and graphics pipelines.</description>
+    </item>
+<item>
       <title>📅 Today's Fresh Pick: TypeScript Community Discord (Discord)</title>
       <link>https://discord.gg/typescript</link>
       <guid isPermaLink="false">https://jibranpcccc.github.io/cybersecurity-infosec-hub/#cybersecurity-infosec-hub-discord-20261013-1-2026-10-13</guid>
@@ -174,13 +181,6 @@
       <guid isPermaLink="false">https://jibranpcccc.github.io/cybersecurity-infosec-hub/#cybersecurity-infosec-hub-forum-20260914-1-2026-09-14</guid>
       <pubDate>Mon, 14 Sep 2026 06:06:38 GMT</pubDate>
       <description>Newly verified community added to Cybersecurity &amp; Ethical Hacking Hub: Official forum for machine hints, CTF post-mortems, exploit write-ups, and privilege escalation techniques.</description>
-    </item>
-<item>
-      <title>📅 Today's Fresh Pick: Cyber Security Discussions Discord (Discord)</title>
-      <link>https://discord.gg/cyber</link>
-      <guid isPermaLink="false">https://jibranpcccc.github.io/cybersecurity-infosec-hub/#cybersecurity-infosec-hub-discord-20260913-1-2026-09-13</guid>
-      <pubDate>Sun, 13 Sep 2026 14:02:10 GMT</pubDate>
-      <description>Newly verified community added to Cybersecurity &amp; Ethical Hacking Hub: Community discussing application security, web exploit chains, and security audit tools.</description>
     </item>
   </channel>
 </rss>
