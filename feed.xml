@@ -4,10 +4,17 @@
     <title>Cybersecurity &amp; Ethical Hacking Hub</title>
     <link>https://jibranpcccc.github.io/cybersecurity-infosec-hub/</link>
     <description>Verified community directory and updates.</description>
-    <lastBuildDate>Mon, 26 Oct 2026 06:44:15 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 27 Oct 2026 06:00:19 GMT</lastBuildDate>
     <atom:link href="https://jibranpcccc.github.io/cybersecurity-infosec-hub/feed.xml" rel="self" type="application/rss+xml"/>
     <atom:link href="https://pubsubhubbub.appspot.com/" rel="hub"/>
-                                                                                                                                                            <item>
+                                                                                                                                                                <item>
+      <title>📅 Today's Fresh Pick: Hacker News Community (Forum)</title>
+      <link>https://news.ycombinator.com</link>
+      <guid isPermaLink="false">https://jibranpcccc.github.io/cybersecurity-infosec-hub/#cybersecurity-infosec-hub-forum-20261026-1-2026-10-27</guid>
+      <pubDate>Tue, 27 Oct 2026 06:00:19 GMT</pubDate>
+      <description>Newly verified community added to Cybersecurity &amp; Ethical Hacking Hub: Y Combinator's flagship intellectual community discussing software engineering, science, and startup mechanics.</description>
+    </item>
+<item>
       <title>📅 Today's Fresh Pick: Hacker News Community (Forum)</title>
       <link>https://news.ycombinator.com</link>
       <guid isPermaLink="false">https://jibranpcccc.github.io/cybersecurity-infosec-hub/#cybersecurity-infosec-hub-forum-20261026-1-2026-10-26</guid>
@@ -174,13 +181,6 @@
       <guid isPermaLink="false">https://jibranpcccc.github.io/cybersecurity-infosec-hub/#cybersecurity-infosec-hub-discord-20260929-1-2026-09-29</guid>
       <pubDate>Tue, 29 Sep 2026 06:00:18 GMT</pubDate>
       <description>Newly verified community added to Cybersecurity &amp; Ethical Hacking Hub: Building memory-safe system tools and malware sandboxes with Rust.</description>
-    </item>
-<item>
-      <title>📅 Today's Fresh Pick: Devcord Secure Engineering Discord (Discord)</title>
-      <link>https://discord.gg/devcord</link>
-      <guid isPermaLink="false">https://jibranpcccc.github.io/cybersecurity-infosec-hub/#cybersecurity-infosec-hub-discord-20260927-1-2026-09-27</guid>
-      <pubDate>Sun, 27 Sep 2026 06:00:22 GMT</pubDate>
-      <description>Newly verified community added to Cybersecurity &amp; Ethical Hacking Hub: Integrating SAST and DAST scanners into CI/CD pipelines, container auditing, and secrets management.</description>
     </item>
   </channel>
 </rss>
