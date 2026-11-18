@@ -1,5 +1,22 @@
 [
   {
+    "title": "r/cybersecurity Community",
+    "platform": "Reddit",
+    "category": "Infosec",
+    "memberCount": "1,100,000+ members",
+    "description": "The primary Reddit community for cybersecurity professionals, SOC analysts, incident response, and enterprise defense.",
+    "joinUrl": "https://www.reddit.com/r/cybersecurity/",
+    "tags": [
+      "cybersecurity",
+      "infosec",
+      "defense",
+      "reddit"
+    ],
+    "isTodaysPick": true,
+    "lastUpdated": "2026-11-18",
+    "featured": true
+  },
+  {
     "id": "cybersecurity-infosec-hub-forum-20261026-1",
     "title": "Hacker News Community",
     "platform": "Forum",
@@ -15,7 +32,7 @@
     ],
     "verified": true,
     "featured": true,
-    "isTodaysPick": true,
+    "isTodaysPick": false,
     "lastUpdated": "2026-11-18"
   },
   {
@@ -713,21 +730,6 @@
     "featured": true,
     "isTodaysPick": false,
     "lastUpdated": "2026-09-13"
-  },
-  {
-    "title": "r/cybersecurity Community",
-    "platform": "Reddit",
-    "category": "Infosec",
-    "memberCount": "1,100,000+ members",
-    "description": "The primary Reddit community for cybersecurity professionals, SOC analysts, incident response, and enterprise defense.",
-    "joinUrl": "https://www.reddit.com/r/cybersecurity/",
-    "tags": [
-      "cybersecurity",
-      "infosec",
-      "defense",
-      "reddit"
-    ],
-    "isTodaysPick": false
   },
   {
     "title": "The Security Community Discord",
