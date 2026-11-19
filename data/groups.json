@@ -1,5 +1,22 @@
 [
   {
+    "title": "The Security Community Discord",
+    "platform": "Discord",
+    "category": "Infosec",
+    "memberCount": "120,000+ members",
+    "description": "One of Discord's largest security hubs discussing vulnerability research, defense in depth, certifications, and threat intel.",
+    "joinUrl": "https://discord.gg/security",
+    "tags": [
+      "security",
+      "infosec",
+      "threat-intel",
+      "discord"
+    ],
+    "isTodaysPick": true,
+    "lastUpdated": "2026-11-19",
+    "featured": true
+  },
+  {
     "title": "r/cybersecurity Community",
     "platform": "Reddit",
     "category": "Infosec",
@@ -12,7 +29,7 @@
       "defense",
       "reddit"
     ],
-    "isTodaysPick": true,
+    "isTodaysPick": false,
     "lastUpdated": "2026-11-18",
     "featured": true
   },
@@ -730,21 +747,6 @@
     "featured": true,
     "isTodaysPick": false,
     "lastUpdated": "2026-09-13"
-  },
-  {
-    "title": "The Security Community Discord",
-    "platform": "Discord",
-    "category": "Infosec",
-    "memberCount": "120,000+ members",
-    "description": "One of Discord's largest security hubs discussing vulnerability research, defense in depth, certifications, and threat intel.",
-    "joinUrl": "https://discord.gg/security",
-    "tags": [
-      "security",
-      "infosec",
-      "threat-intel",
-      "discord"
-    ],
-    "isTodaysPick": false
   },
   {
     "title": "r/netsec Research Forum",
