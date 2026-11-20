@@ -1,5 +1,22 @@
 [
   {
+    "title": "r/netsec Research Forum",
+    "platform": "Reddit",
+    "category": "Infosec",
+    "memberCount": "640,000+ members",
+    "description": "Curated technical discussion on network security research, vulnerability advisories, exploit analysis, and zero-day disclosures.",
+    "joinUrl": "https://www.reddit.com/r/netsec/",
+    "tags": [
+      "netsec",
+      "vulnerability",
+      "research",
+      "reddit"
+    ],
+    "isTodaysPick": true,
+    "lastUpdated": "2026-11-20",
+    "featured": true
+  },
+  {
     "title": "The Security Community Discord",
     "platform": "Discord",
     "category": "Infosec",
@@ -12,7 +29,7 @@
       "threat-intel",
       "discord"
     ],
-    "isTodaysPick": true,
+    "isTodaysPick": false,
     "lastUpdated": "2026-11-19",
     "featured": true
   },
@@ -747,21 +764,6 @@
     "featured": true,
     "isTodaysPick": false,
     "lastUpdated": "2026-09-13"
-  },
-  {
-    "title": "r/netsec Research Forum",
-    "platform": "Reddit",
-    "category": "Infosec",
-    "memberCount": "640,000+ members",
-    "description": "Curated technical discussion on network security research, vulnerability advisories, exploit analysis, and zero-day disclosures.",
-    "joinUrl": "https://www.reddit.com/r/netsec/",
-    "tags": [
-      "netsec",
-      "vulnerability",
-      "research",
-      "reddit"
-    ],
-    "isTodaysPick": false
   },
   {
     "title": "Hack The Box Community Discord",
