@@ -1,5 +1,22 @@
 [
   {
+    "title": "Hack The Box Community Discord",
+    "platform": "Discord",
+    "category": "Ctf Competitions",
+    "memberCount": "280,000+ members",
+    "description": "Official Hack The Box Discord for CTF writeups, active machine walkthroughs, Pro Labs, and offensive security training.",
+    "joinUrl": "https://discord.gg/hackthebox",
+    "tags": [
+      "hackthebox",
+      "ctf",
+      "penetration-testing",
+      "discord"
+    ],
+    "isTodaysPick": true,
+    "lastUpdated": "2026-11-21",
+    "featured": true
+  },
+  {
     "title": "r/netsec Research Forum",
     "platform": "Reddit",
     "category": "Infosec",
@@ -12,7 +29,7 @@
       "research",
       "reddit"
     ],
-    "isTodaysPick": true,
+    "isTodaysPick": false,
     "lastUpdated": "2026-11-20",
     "featured": true
   },
@@ -764,21 +781,6 @@
     "featured": true,
     "isTodaysPick": false,
     "lastUpdated": "2026-09-13"
-  },
-  {
-    "title": "Hack The Box Community Discord",
-    "platform": "Discord",
-    "category": "Ctf Competitions",
-    "memberCount": "280,000+ members",
-    "description": "Official Hack The Box Discord for CTF writeups, active machine walkthroughs, Pro Labs, and offensive security training.",
-    "joinUrl": "https://discord.gg/hackthebox",
-    "tags": [
-      "hackthebox",
-      "ctf",
-      "penetration-testing",
-      "discord"
-    ],
-    "isTodaysPick": false
   },
   {
     "title": "r/ethicalhacking Community",

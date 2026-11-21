@@ -4,10 +4,17 @@
     <title>Cybersecurity &amp; Ethical Hacking Hub</title>
     <link>https://jibranpcccc.github.io/cybersecurity-infosec-hub/</link>
     <description>Verified community directory and updates.</description>
-    <lastBuildDate>Fri, 20 Nov 2026 06:00:19 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 07:52:36 GMT</lastBuildDate>
     <atom:link href="https://jibranpcccc.github.io/cybersecurity-infosec-hub/feed.xml" rel="self" type="application/rss+xml"/>
     <atom:link href="https://pubsubhubbub.appspot.com/" rel="hub"/>
-                                                                                                                                                                                                                                            <item>
+                                                                                                                                                                                                                                                <item>
+      <title>📅 Today's Fresh Pick: Hack The Box Community Discord (Discord)</title>
+      <link>https://discord.gg/hackthebox</link>
+      <guid isPermaLink="false">https://jibranpcccc.github.io/cybersecurity-infosec-hub/#comm-2026-11-21</guid>
+      <pubDate>Sat, 21 Nov 2026 07:52:36 GMT</pubDate>
+      <description>Newly verified community added to Cybersecurity &amp; Ethical Hacking Hub: Official Hack The Box Discord for CTF writeups, active machine walkthroughs, Pro Labs, and offensive security training.</description>
+    </item>
+<item>
       <title>📅 Today's Fresh Pick: r/netsec Research Forum (Reddit)</title>
       <link>https://www.reddit.com/r/netsec/</link>
       <guid isPermaLink="false">https://jibranpcccc.github.io/cybersecurity-infosec-hub/#comm-2026-11-20</guid>
@@ -174,13 +181,6 @@
       <guid isPermaLink="false">https://jibranpcccc.github.io/cybersecurity-infosec-hub/#cybersecurity-infosec-hub-forum-20261023-1-2026-10-23</guid>
       <pubDate>Fri, 23 Oct 2026 06:00:20 GMT</pubDate>
       <description>Newly verified community added to Cybersecurity &amp; Ethical Hacking Hub: Global developer blogging and discussion platform sharing tutorials, benchmarks, and project breakdowns.</description>
-    </item>
-<item>
-      <title>📅 Today's Fresh Pick: Stack Overflow Python Questions (Forum)</title>
-      <link>https://stackoverflow.com/questions/tagged/python</link>
-      <guid isPermaLink="false">https://jibranpcccc.github.io/cybersecurity-infosec-hub/#cybersecurity-infosec-hub-forum-20261022-1-2026-10-22</guid>
-      <pubDate>Thu, 22 Oct 2026 06:00:20 GMT</pubDate>
-      <description>Newly verified community added to Cybersecurity &amp; Ethical Hacking Hub: The world's largest repository of solved Python questions, debugging threads, and code snippets.</description>
     </item>
   </channel>
 </rss>
