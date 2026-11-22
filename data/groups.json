@@ -1,5 +1,22 @@
 [
   {
+    "title": "r/ethicalhacking Community",
+    "platform": "Reddit",
+    "category": "Penetration Testing",
+    "memberCount": "290,000+ members",
+    "description": "Educational community for white-hat hackers, penetration testing methodologies, Metasploit, and Kali Linux toolchains.",
+    "joinUrl": "https://www.reddit.com/r/ethicalhacking/",
+    "tags": [
+      "ethical-hacking",
+      "penetration-testing",
+      "kali",
+      "reddit"
+    ],
+    "isTodaysPick": true,
+    "lastUpdated": "2026-11-22",
+    "featured": true
+  },
+  {
     "title": "Hack The Box Community Discord",
     "platform": "Discord",
     "category": "Ctf Competitions",
@@ -12,7 +29,7 @@
       "penetration-testing",
       "discord"
     ],
-    "isTodaysPick": true,
+    "isTodaysPick": false,
     "lastUpdated": "2026-11-21",
     "featured": true
   },
@@ -781,21 +798,6 @@
     "featured": true,
     "isTodaysPick": false,
     "lastUpdated": "2026-09-13"
-  },
-  {
-    "title": "r/ethicalhacking Community",
-    "platform": "Reddit",
-    "category": "Penetration Testing",
-    "memberCount": "290,000+ members",
-    "description": "Educational community for white-hat hackers, penetration testing methodologies, Metasploit, and Kali Linux toolchains.",
-    "joinUrl": "https://www.reddit.com/r/ethicalhacking/",
-    "tags": [
-      "ethical-hacking",
-      "penetration-testing",
-      "kali",
-      "reddit"
-    ],
-    "isTodaysPick": false
   },
   {
     "title": "TryHackMe Official Discord",
