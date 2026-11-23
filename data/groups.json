@@ -1,5 +1,22 @@
 [
   {
+    "title": "TryHackMe Official Discord",
+    "platform": "Discord",
+    "category": "Ctf Competitions",
+    "memberCount": "310,000+ members",
+    "description": "Collaborative learning hub with guided security paths, capture the flag challenges, King of the Hill battles, and mentorship.",
+    "joinUrl": "https://discord.gg/tryhackme",
+    "tags": [
+      "tryhackme",
+      "hands-on",
+      "learning",
+      "discord"
+    ],
+    "isTodaysPick": true,
+    "lastUpdated": "2026-11-23",
+    "featured": true
+  },
+  {
     "title": "r/ethicalhacking Community",
     "platform": "Reddit",
     "category": "Penetration Testing",
@@ -12,7 +29,7 @@
       "kali",
       "reddit"
     ],
-    "isTodaysPick": true,
+    "isTodaysPick": false,
     "lastUpdated": "2026-11-22",
     "featured": true
   },
@@ -798,21 +815,6 @@
     "featured": true,
     "isTodaysPick": false,
     "lastUpdated": "2026-09-13"
-  },
-  {
-    "title": "TryHackMe Official Discord",
-    "platform": "Discord",
-    "category": "Ctf Competitions",
-    "memberCount": "310,000+ members",
-    "description": "Collaborative learning hub with guided security paths, capture the flag challenges, King of the Hill battles, and mentorship.",
-    "joinUrl": "https://discord.gg/tryhackme",
-    "tags": [
-      "tryhackme",
-      "hands-on",
-      "learning",
-      "discord"
-    ],
-    "isTodaysPick": false
   },
   {
     "title": "r/bugbounty Hunters Hub",
