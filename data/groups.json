@@ -1,5 +1,22 @@
 [
   {
+    "title": "r/bugbounty Hunters Hub",
+    "platform": "Reddit",
+    "category": "Bug Bounty",
+    "memberCount": "180,000+ members",
+    "description": "Active forum for bug bounty hunters sharing recon methodologies, XSS payloads, SSRF triage, and HackerOne disclosures.",
+    "joinUrl": "https://www.reddit.com/r/bugbounty/",
+    "tags": [
+      "bugbounty",
+      "recon",
+      "hackerone",
+      "reddit"
+    ],
+    "isTodaysPick": true,
+    "lastUpdated": "2026-11-24",
+    "featured": true
+  },
+  {
     "title": "TryHackMe Official Discord",
     "platform": "Discord",
     "category": "Ctf Competitions",
@@ -12,7 +29,7 @@
       "learning",
       "discord"
     ],
-    "isTodaysPick": true,
+    "isTodaysPick": false,
     "lastUpdated": "2026-11-23",
     "featured": true
   },
@@ -815,21 +832,6 @@
     "featured": true,
     "isTodaysPick": false,
     "lastUpdated": "2026-09-13"
-  },
-  {
-    "title": "r/bugbounty Hunters Hub",
-    "platform": "Reddit",
-    "category": "Bug Bounty",
-    "memberCount": "180,000+ members",
-    "description": "Active forum for bug bounty hunters sharing recon methodologies, XSS payloads, SSRF triage, and HackerOne disclosures.",
-    "joinUrl": "https://www.reddit.com/r/bugbounty/",
-    "tags": [
-      "bugbounty",
-      "recon",
-      "hackerone",
-      "reddit"
-    ],
-    "isTodaysPick": false
   },
   {
     "title": "NahamSec Bug Bounty Community",
