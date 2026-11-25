@@ -1,5 +1,22 @@
 [
   {
+    "title": "NahamSec Bug Bounty Community",
+    "platform": "Discord",
+    "category": "Bug Bounty",
+    "memberCount": "75,000+ members",
+    "description": "Premier bug hunting and web application security community hosted by NahamSec, featuring live hacking streams and Q&A.",
+    "joinUrl": "https://discord.gg/nahamsec",
+    "tags": [
+      "nahamsec",
+      "web-security",
+      "bounty",
+      "discord"
+    ],
+    "isTodaysPick": true,
+    "lastUpdated": "2026-11-25",
+    "featured": true
+  },
+  {
     "title": "r/bugbounty Hunters Hub",
     "platform": "Reddit",
     "category": "Bug Bounty",
@@ -12,7 +29,7 @@
       "hackerone",
       "reddit"
     ],
-    "isTodaysPick": true,
+    "isTodaysPick": false,
     "lastUpdated": "2026-11-24",
     "featured": true
   },
@@ -832,21 +849,6 @@
     "featured": true,
     "isTodaysPick": false,
     "lastUpdated": "2026-09-13"
-  },
-  {
-    "title": "NahamSec Bug Bounty Community",
-    "platform": "Discord",
-    "category": "Bug Bounty",
-    "memberCount": "75,000+ members",
-    "description": "Premier bug hunting and web application security community hosted by NahamSec, featuring live hacking streams and Q&A.",
-    "joinUrl": "https://discord.gg/nahamsec",
-    "tags": [
-      "nahamsec",
-      "web-security",
-      "bounty",
-      "discord"
-    ],
-    "isTodaysPick": false
   },
   {
     "title": "r/AskNetsec Advisory Guild",
