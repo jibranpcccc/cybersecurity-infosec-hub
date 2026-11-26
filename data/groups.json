@@ -1,5 +1,22 @@
 [
   {
+    "title": "r/AskNetsec Advisory Guild",
+    "platform": "Reddit",
+    "category": "Infosec",
+    "memberCount": "210,000+ members",
+    "description": "Question and answer subreddit for information security practitioners, architecture decisions, tooling, and career advice.",
+    "joinUrl": "https://www.reddit.com/r/AskNetsec/",
+    "tags": [
+      "asknetsec",
+      "qa",
+      "infosec",
+      "reddit"
+    ],
+    "isTodaysPick": true,
+    "lastUpdated": "2026-11-26",
+    "featured": true
+  },
+  {
     "title": "NahamSec Bug Bounty Community",
     "platform": "Discord",
     "category": "Bug Bounty",
@@ -12,7 +29,7 @@
       "bounty",
       "discord"
     ],
-    "isTodaysPick": true,
+    "isTodaysPick": false,
     "lastUpdated": "2026-11-25",
     "featured": true
   },
@@ -849,21 +866,6 @@
     "featured": true,
     "isTodaysPick": false,
     "lastUpdated": "2026-09-13"
-  },
-  {
-    "title": "r/AskNetsec Advisory Guild",
-    "platform": "Reddit",
-    "category": "Infosec",
-    "memberCount": "210,000+ members",
-    "description": "Question and answer subreddit for information security practitioners, architecture decisions, tooling, and career advice.",
-    "joinUrl": "https://www.reddit.com/r/AskNetsec/",
-    "tags": [
-      "asknetsec",
-      "qa",
-      "infosec",
-      "reddit"
-    ],
-    "isTodaysPick": false
   },
   {
     "title": "TCM Security Community",
